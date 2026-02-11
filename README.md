@@ -9,7 +9,7 @@ with country/zone selection and map visualization.
 version: '3.4'
 services:
   geoip:
-    image: registry.wifx.net/technical/geoip-wifx:main
+    image: reptechwifx/mikrotik-geoip:latest
     environment:
       GEOIP_REFRESH_HOURS: 24
       GEOIP_COUNTRY_PREFIX: geoip-
