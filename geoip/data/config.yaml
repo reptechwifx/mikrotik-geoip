@@ -1,0 +1,20 @@
+version: 1
+
+sources:
+  countries_html: "https://www.ipdeny.com/ipblocks/"
+  ipv4_tar_gz: "https://www.ipdeny.com/ipblocks/data/countries/all-zones.tar.gz"
+  ipv6_tar_gz: "https://www.ipdeny.com/ipv6/ipaddresses/blocks/ipv6-all-zones.tar.gz"
+
+files:
+  countries_yaml: "/data/geoip/countries.yaml"
+  zones_yaml: "/data/geoip/zones.yaml"
+
+paths:
+  download_dir: "/data/downloads"
+  ipv4_dir: "/data/geoip/ipv4"
+  ipv6_dir: "/data/geoip/ipv6"
+
+refresh_hours: 24
+fetch_timeout: 20
+
+tmpfs_max_size: "20M"
